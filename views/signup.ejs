@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="NoxBuilds Single Page Application">
+    <meta name="author" content="">
+    <title>Nox Builds</title>
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main role="main">
+        <section>
+            <form class="form-signin" role="form" method="post" action="/signup">
+                <div class="form-group-row">
+                    <div class="alert alert-danger" id='danger' style='text-align:center;display:none;'></div>
+                    <div class="alert alert-success" id='success' style='text-align:center;display:none;'></div>
+                    <div class="alert alert-warning" id='warning' style='text-align:center;display:none;'></div>
+                </div>
+                <center><img class="mb-4" src="/images/logo.png" alt="" width="72" height="72"></center>
+                <h1 class="h3 mb-3 font-weight-normal">Sign Up form</h1>
+                <label for="fname" class="sr-only">First Name</label>
+                <input type="text" name="first_name" id="fname" class="form-control" placeholder="First Name" required=""
+                    autofocus="">
+                <label for="lname" class="sr-only">Last Name</label>
+                <input type="text" name="last_name" id="lname" class="form-control" placeholder="Last Name" required="">
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required="">
+                <label for="login-password" class="sr-only">Password</label>
+                <input type="password" name="password" id="login-password" class="form-control" placeholder="Password"
+                    required="">
+                <label for="login-confirm-password" class="sr-only">Confirm Password</label>
+                <input type="password" name="confirm-password" id="login-confirm-password" class="form-control"
+                    placeholder="Confirm password" required="">
+                <button class="btn btn-lg btn-primary btn-block" id="sign-up" type="submit">Sign up</button>
+                <div class="form-group">
+                    <div class="col-md-12 control">
+                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
+                            Already have an Account?
+                            <a href="/login">
+                                Sign in here.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer-wrap">
+    </footer>
+    <script src="/js/jquery-3.3.1.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
